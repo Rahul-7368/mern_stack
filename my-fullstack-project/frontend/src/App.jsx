@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TransactionTable from "./TransactionTable";
 import TransactionStatistics from "./TransactionStatistics";
-// import TransactionBarChart from "./TransactionBarChart";
+import TransactionBarChart from "./TransactionBarChart";
 
 const App = () => {
   const [month, setMonth] = useState("03");
@@ -47,7 +47,7 @@ const App = () => {
 
       <TransactionStatistics month={month} />
       <TransactionTable month={month} search={search} />
-      {/* <TransactionBarChart month={month} /> */}
+      <TransactionBarChart month={month} />
     </div>
   );
 };
